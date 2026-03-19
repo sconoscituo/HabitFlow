@@ -19,6 +19,10 @@ class Settings(BaseSettings):
     # Gemini AI API 설정
     gemini_api_key: str = ""
 
+    # 포트원(PortOne) 결제 연동
+    portone_api_key: str = ""
+    portone_api_secret: str = ""
+
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"

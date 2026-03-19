@@ -12,7 +12,7 @@ from sqlalchemy import select
 from app.config import get_settings
 from app.database import init_db, AsyncSessionLocal
 from app.models.user import User
-from app.routers import users, habits, reports
+from app.routers import users, habits, reports, streak
 from app.services.coach import generate_weekly_coaching, save_weekly_report
 
 logger = logging.getLogger(__name__)
@@ -116,6 +116,7 @@ app.add_middleware(
 app.include_router(users.router, prefix="/api/v1")
 app.include_router(habits.router, prefix="/api/v1")
 app.include_router(reports.router, prefix="/api/v1")
+app.include_router(streak.router, prefix="/api/v1")
 
 
 @app.get("/", tags=["health"])
