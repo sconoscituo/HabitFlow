@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+.installed.cfg
+lib/
+lib64/
+
+# 가상환경
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# 환경변수
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 로그
+*.log
+logs/
+
+# DB
+*.db
+*.sqlite3
+
+# 테스트 커버리지
+.coverage
+htmlcov/
+.pytest_cache/
+
+# oh-my-claudecode
+.omc/
+.claude/
+
+# 도커
+.dockerignore
